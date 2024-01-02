@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
+import "./global.scss";
+import TitileCard from "./components/TitleCard/TitileCard";
 
-function App() {
+import titlecardBG1 from "./assets/images/titlecard-bg-1.png";
+import titlecardBG2 from "./assets/images/titlecard-bg-2.png";
+import iwatchBG from './assets/images/iWatch-bg.png';
+import iwatchHeading from "./assets/images/iWatch-Heading.png";
+
+import IWatchTitleCard from "./components/iWatchTitleCard/iWatchTitleCard";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <TitileCard
+        heading="iPhone 15 Pro"
+        description="
+        Titanium. So strong. So light. So Pro."
+        bgImage={titlecardBG1}
+        bgColor="black"
+        color="white"
+      />
+      <TitileCard
+        heading="iPhone 15 Pro"
+        description="
+        New camera. New design. Newphoria."
+        bgImage={titlecardBG2}
+        bgColor="#F5F5F7"
+        color="black"
+      />
+      <IWatchTitleCard image={iwatchBG} heading={iwatchHeading} />
+    </>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,45 @@
+@use '../../utils/colors.scss' as *;
+
+.iwatchtitlecard {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+
+  &__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 1.3125rem 0rem 3.75rem 0rem;
+    flex-direction: column;
+
+    &__description {
+      display: flex;
+      padding: 1.0625rem 0rem 0rem 0;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__btn-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 2px 0px 4px 0px;
+      align-items: center;
+      gap: 39.55px;
+      margin: 1.31rem 0rem 0rem 0rem;
+
+      &__btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: max-content;
+        padding: 0.75rem 1.375rem;
+        border-radius: 61.25rem;
+        background: $apple-com-athens-gray;
+        cursor: pointer;
+      }
+    }
+  }
+}

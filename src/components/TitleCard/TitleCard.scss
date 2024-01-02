@@ -1,0 +1,74 @@
+@use '../../utils/colors.scss' as *;
+
+.titlecard {
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 12.29rem;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    &__heading {
+      color: $apple-com-athens-gray;
+      text-align: center;
+      font-family: Inter;
+      font-size: 3.20606rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 3.75rem; /* 116.966% */
+      letter-spacing: -0.0175rem;
+      margin-bottom: 0.38rem;
+    }
+
+    &__description {
+      color: $apple-com-athens-gray;
+      text-align: center;
+      font-family: Inter;
+      font-size: 1.49706rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.9375rem; /* 129.419% */
+      letter-spacing: 0.007rem;
+      margin-bottom: 0.6rem;
+    }
+
+    &__btn-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 2px 0px 4px 0px;
+      align-items: center;
+      gap: 39.55px;
+
+      &__btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: max-content;
+        cursor: pointer;
+
+        button {
+          color: $apple-com-japanese-laurel;
+          background: transparent;
+          border: none;
+          width: max-content;
+          text-align: center;
+          font-family: Inter;
+          font-size: 1.14844rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.8125rem; /* 157.823% */
+          letter-spacing: 0.01444rem;
+          margin-right: 0.2rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
